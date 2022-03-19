@@ -1,6 +1,7 @@
 import React from "react";
 import Timeline from "../Timeline/Timeline";
 import Video from "../Video/Video";
+import VideoInfo from "../Video/VideoInfo";
 
 const Home = () => {
   return (
@@ -43,8 +44,12 @@ const Home = () => {
             베스트 키워드
           </div>
         </div>
-        <div className="row h-75">
+        <div className="row h-50">
           <Video videoId="y9kkXTucnLU" />
+        </div>
+
+        <div className="row">
+          <VideoInfo />
         </div>
 
         <div
@@ -55,14 +60,19 @@ const Home = () => {
           }}
         >
           <div
-            className="col border border-dark"
+            className="col"
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            인기 타임라인
+            <span
+              className="timeline"
+              style={{ backgroundColor: "rgb(189,93,56)" }}
+            >
+              인기 타임라인
+            </span>
           </div>
           <Timeline href="#hello">00:00:00</Timeline>
           <Timeline href="#hello">00:00:00</Timeline>
