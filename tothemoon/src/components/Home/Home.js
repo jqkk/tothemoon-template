@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline from "../Timeline/Timeline";
+import Video from "../Video/Video";
 
 const Home = () => {
   return (
@@ -43,16 +44,7 @@ const Home = () => {
           </div>
         </div>
         <div className="row h-75">
-          <div
-            id="video_player"
-            style={{
-              width: "80%",
-              height: "80%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          ></div>
+          <Video videoId="y9kkXTucnLU" />
         </div>
 
         <div
