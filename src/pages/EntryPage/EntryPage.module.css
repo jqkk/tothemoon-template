@@ -1,0 +1,16 @@
+.masthead {
+  background-color: #cd5c5c;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+header.masthead h1,
+header.masthead h5 {
+  color: white;
+  font-family: 'NanumGothic';
+}
