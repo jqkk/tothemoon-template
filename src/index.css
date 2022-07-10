@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.bg-primary {
+  background-color: #cd5c5c !important;
+}
+
 @font-face {
   font-family: 'NanumGothic';
   src: url('./font/NanumGothic.otf');
