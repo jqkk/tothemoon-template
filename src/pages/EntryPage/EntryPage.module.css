@@ -1,11 +1,15 @@
 .masthead {
   background-color: #cd5c5c;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.logo {
+  font-family: 'NanumGothic';
 }
 
 header.masthead h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -13,4 +17,24 @@ header.masthead h1,
 header.masthead h5 {
   color: white;
   font-family: 'NanumGothic';
+}
+
+header.masthead h5 {
+  margin: 20px;
+}
+
+.btn {
+  color: rgba(30, 22, 54, 0.6) !important;
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset !important;
+  border-radius: 4px;
+  border-color: transparent !important;
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.85) !important;
+  box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset !important;
+}
+
+.btn:focus {
+  box-shadow: rgb(30 22 54 / 40%) 0 0px 0px 2px inset;
 }
