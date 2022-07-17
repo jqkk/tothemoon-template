@@ -4,8 +4,8 @@ import styles from './Contents.module.css';
 
 function Interest() {
   return (
-    <Layout>
-      <div className={styles.interest_container}>
+    <Layout id="interest">
+      <div className={styles.container}>
         <InterestChart />
       </div>
     </Layout>

@@ -1,0 +1,48 @@
+.comments_div {
+  height: 584px;
+  margin-left: 120px;
+}
+
+#nav_menu_negative {
+  background: rgb(250, 128, 114);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#nav_menu_positive {
+  border-radius: 10px;
+  background: rgb(135, 206, 250);
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_positive:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_negative:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_positive:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_negative:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+.effect_enter {
+  opacity: 0;
+}
+
+.effect_enter_active {
+  opacity: 1;
+  transition: all 500ms;
+}

@@ -1,0 +1,21 @@
+.box {
+  -ms-overflow-style: none;
+}
+
+.box::-webkit-scrollbar {
+  width: 10px;
+}
+.box::-webkit-scrollbar-thumb {
+  background-color: #292424;
+  border-radius: 10px;
+}
+.box::-webkit-scrollbar-track {
+  background-color: rgba(128, 128, 128, 0.219);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.tb {
+  border-spacing: 20px;
+  border-collapse: separate;
+}

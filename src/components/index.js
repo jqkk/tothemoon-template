@@ -9,6 +9,7 @@ import NpComments from './NpComments';
 import EmotionChart from './EmotionChart';
 import EmotionComments from './EmotionComments';
 import InterestChart from './InterestChart';
+import Timeline from './Timeline';
 
 export {
   Intro,
@@ -22,4 +23,5 @@ export {
   EmotionChart,
   EmotionComments,
   InterestChart,
+  Timeline,
 };

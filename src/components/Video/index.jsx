@@ -2,10 +2,10 @@ import React from 'react';
 import Youtube from 'react-youtube';
 import styles from './Video.module.css';
 
-function Video() {
+function Video({ videoId }) {
   return (
     <Youtube
-      videoId="dYRITmpFbJ4"
+      videoId={videoId}
       className={styles.video_container}
       iframeClassName={styles.video}
     />

@@ -7,9 +7,9 @@ import {
   VideoInfo,
 } from '../../../components';
 
-function Home() {
+function Home({ url }) {
   return (
-    <Layout>
+    <Layout id="home">
       <div className="row">
         <div className="col-9">
           <Search />
@@ -19,7 +19,7 @@ function Home() {
         </div>
       </div>
       <div className="row h-50">
-        <Video />
+        <Video videoId={url} />
       </div>
       <div className="row">
         <VideoInfo />

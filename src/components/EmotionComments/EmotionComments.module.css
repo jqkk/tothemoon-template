@@ -1,0 +1,123 @@
+.comments_div {
+  height: 584px;
+  margin-left: 120px;
+}
+
+#nav_menu_emotion_happy {
+  background: rgb(255, 99, 132);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_surprised {
+  background: rgb(255, 159, 64);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_anger {
+  background: rgb(255, 205, 86);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_neutral {
+  background: rgb(54, 162, 235);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_sadness {
+  background: rgb(75, 192, 192);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_fear {
+  background: rgb(153, 102, 255);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_disgust {
+  background: rgb(188, 143, 143);
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+#nav_menu_emotion_happy:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_happy:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_surprised:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_surprised:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_anger:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_anger:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_sadness:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_sadness:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_neutral:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_neutral:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_fear:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_fear:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_disgust:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
+
+#nav_menu_emotion_disgust:focus {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.2) inset;
+  color: black;
+}
