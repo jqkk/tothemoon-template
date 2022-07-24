@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import GlobalStyle from './styles';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme } from './styles';
 import { EntryPage, AnalysisPage } from './pages';
 
 function App() {
@@ -8,10 +9,12 @@ function App() {
     <>
       <GlobalStyle />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<EntryPage />} />
-          <Route path="/analyze" element={<AnalysisPage />} />
-        </Routes>
+        <ThemeProvider theme={theme}>
+          <Routes>
+            <Route path="/" element={<EntryPage />} />
+            <Route path="/analyze" element={<AnalysisPage />} />
+          </Routes>
+        </ThemeProvider>
       </BrowserRouter>
     </>
   );

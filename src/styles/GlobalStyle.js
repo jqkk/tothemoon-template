@@ -10,6 +10,17 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Nanum Gothic", sans-serif;
   }
 
+  a { text-decoration: none; color: black; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:focus { text-decoration: none; }
+  a:hover, a:active { text-decoration: none; }
+
+  :root {
+    --color-indianred: #cd5c5c;
+    --bs-light-rgb: 248, 249, 250;
+  }
+
 `;
 
 export default GlobalStyle;
