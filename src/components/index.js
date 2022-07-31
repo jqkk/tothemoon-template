@@ -2,5 +2,6 @@ import Navbar from './Navbar';
 import SearchContainer from './SearchContainer';
 import Intro from './Intro';
 import SideBar from './SideBar';
+import InterestChart from './InterestChart';
 
-export { Navbar, SearchContainer, Intro, SideBar };
+export { Navbar, SearchContainer, Intro, SideBar, InterestChart };

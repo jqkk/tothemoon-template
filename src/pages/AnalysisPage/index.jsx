@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { SideBar } from '../../components';
 import useMoveScroll from '../../hooks/useMoveScroll';
+import { Home, Np, Emotion, Interest } from './Contents';
 
 function AnalysisPage() {
   const tabs = [
@@ -9,48 +10,63 @@ function AnalysisPage() {
       ...useMoveScroll(),
       key: 0,
       title: 'HOME',
+      content: <Home />,
     },
     {
       ...useMoveScroll(),
       key: 1,
       title: '댓글 긍정 부정 분석',
+      content: <Np />,
+      center: true,
     },
     {
       ...useMoveScroll(),
       key: 2,
       title: '댓글 감정 분석',
+      content: <Emotion />,
+      center: true,
     },
     {
       ...useMoveScroll(),
       key: 3,
       title: '댓글 관심도',
+      content: <Interest />,
+      center: true,
     },
   ];
   return (
-    <Container>
+    <>
       <SideBar elements={tabs} />
       <ContentContainer>
         {tabs.map((element) => (
-          <Content key={element.key} ref={element.element} />
+          <Content
+            key={element.key}
+            ref={element.element}
+            center={element.center}
+          >
+            {element.content}
+          </Content>
         ))}
       </ContentContainer>
-    </Container>
+    </>
   );
 }
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
 const ContentContainer = styled.div`
-  flex: 1;
+  margin-left: 17rem;
   display: flex;
   flex-direction: column;
 `;
 
 const Content = styled.div`
   height: 100vh;
+  ${(props) =>
+    props.center &&
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `}
 `;
 
 export default AnalysisPage;
