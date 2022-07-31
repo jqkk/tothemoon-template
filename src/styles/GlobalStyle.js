@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --color-indianred: #cd5c5c;
     --bs-light-rgb: 248, 249, 250;
+    --color-shallow-indianred: 250, 128, 114;
   }
 
 `;
