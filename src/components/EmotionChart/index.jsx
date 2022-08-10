@@ -124,7 +124,9 @@ function EmotionChart({ data }) {
     ],
   };
   return (
-    <Doughnut style={{ width: '400px', height: '400px' }} data={settings} />
+    <div>
+      <Doughnut style={{ width: '400px', height: '400px' }} data={settings} />
+    </div>
   );
 }
 
