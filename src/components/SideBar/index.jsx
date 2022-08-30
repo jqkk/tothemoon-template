@@ -32,6 +32,8 @@ function SideBar({ elements }) {
             </S.Nav>
           );
         })}
+        <S.Nav>분석 결과 저장</S.Nav>
+        <S.Nav>My Page</S.Nav>
       </S.NavContainer>
     </S.NavBar>
   );

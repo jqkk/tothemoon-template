@@ -11,7 +11,6 @@ export const NavBar = styled.nav`
 
 export const NavContainer = styled.div`
   width: 100%;
-  height: 15rem;
   display: flex;
   flex-direction: column;
 `;
