@@ -6,6 +6,7 @@ import InterestChart from './InterestChart';
 import EmotionChart from './EmotionChart';
 import NpChart from './NpChart';
 import TabContent from './TabContent';
+import VideoContainer from './VideoContainer';
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   EmotionChart,
   NpChart,
   TabContent,
+  VideoContainer,
 };
