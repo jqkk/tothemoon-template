@@ -1,18 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { VideoContainer } from '../../../components';
+import { VideoContainer, DropDown } from '../../../components';
 
 function Home() {
   return (
     <>
       <HeaderContainer>
-        <Search />
+        <SearchContainer>Hello</SearchContainer>
         <DropDownContainer>
-          <DropDown />
-          <DropDown />
-          <DropDown />
-          <DropDown />
-          <DropDown />
           <DropDown />
         </DropDownContainer>
       </HeaderContainer>
@@ -30,20 +25,14 @@ const HeaderContainer = styled.div`
   height: 60px;
 `;
 
-const Search = styled.div`
+const SearchContainer = styled.div`
   height: 60px;
   width: 75%;
   margin-right: 25px;
-  background-color: green;
+  color: var(--color-indianred);
+  border: solid;
 `;
 
 const DropDownContainer = styled.div`
   width: 20%;
-  background-color: skyblue;
-  position: relative;
-`;
-
-const DropDown = styled.div`
-  height: 60px;
-  background-color: blue;
 `;
