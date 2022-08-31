@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Naetube/static/css/main.58151b0b.css",
+    "main.js": "/Naetube/static/js/main.bb7ad471.js",
+    "static/js/787.cae1ddfe.chunk.js": "/Naetube/static/js/787.cae1ddfe.chunk.js",
+    "index.html": "/Naetube/index.html",
+    "main.58151b0b.css.map": "/Naetube/static/css/main.58151b0b.css.map",
+    "main.bb7ad471.js.map": "/Naetube/static/js/main.bb7ad471.js.map",
+    "787.cae1ddfe.chunk.js.map": "/Naetube/static/js/787.cae1ddfe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58151b0b.css",
+    "static/js/main.bb7ad471.js"
+  ]
+}
