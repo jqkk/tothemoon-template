@@ -1,16 +1,19 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { useParams } from 'react-router-dom';
 import { SideBar } from '../../components';
 import useMoveScroll from '../../hooks/useMoveScroll';
 import { Home, Np, Emotion, Interest } from './Contents';
 
 function AnalysisPage() {
+  const params = useParams();
+  const { url } = params;
   const tabs = [
     {
       ...useMoveScroll(),
       key: 0,
       title: 'HOME',
-      content: <Home />,
+      content: <Home url={url} />,
     },
     {
       ...useMoveScroll(),

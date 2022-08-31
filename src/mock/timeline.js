@@ -1,22 +1,27 @@
 export default [
   {
-    count: '2',
+    count: '7',
     sec: 0,
     label: '00:00 ~ 00:10',
   },
   {
-    count: '2',
-    sec: 210,
-    label: '03:30~03:40',
+    count: '5',
+    sec: 60,
+    label: '01:00~01:10',
+  },
+  {
+    count: '3',
+    sec: 150,
+    label: '02:30~02:40',
   },
   {
     count: '1',
-    sec: 421,
-    label: '07:01~07:11',
+    sec: 191,
+    label: '03:11~03:21',
   },
   {
     count: '1',
-    sec: 613,
-    label: '10:13~10:23',
+    sec: 230,
+    label: '03:50~04:00',
   },
 ];

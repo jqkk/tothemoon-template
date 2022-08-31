@@ -8,6 +8,9 @@ import NpChart from './NpChart';
 import TabContent from './TabContent';
 import VideoContainer from './VideoContainer';
 import DropDown from './DropDown';
+import Search from './Search';
+import Modal from './Modal';
+import Spinner from './Spinner';
 
 export {
   Navbar,
@@ -20,4 +23,7 @@ export {
   TabContent,
   VideoContainer,
   DropDown,
+  Search,
+  Modal,
+  Spinner,
 };

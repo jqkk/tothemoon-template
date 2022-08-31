@@ -12,7 +12,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <Routes>
             <Route path="/" element={<EntryPage />} />
-            <Route path="/analyze" element={<AnalysisPage />} />
+            <Route path="/analysis/:url" element={<AnalysisPage />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

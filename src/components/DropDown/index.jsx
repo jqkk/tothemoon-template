@@ -5,8 +5,8 @@ import * as S from './style';
 import styles from './DropDown.module.css';
 import { KeywordMock } from '../../mock';
 
-function DropDown() {
-  const data = KeywordMock;
+function DropDown({ setPopUp }) {
+  const data = KeywordMock.b5;
   const [open, setOpen] = useState(false);
   const onClick = () => {
     setOpen((cur) => !cur);
@@ -39,7 +39,15 @@ function DropDown() {
         ? data.map((cur, index) => (
             <S.DropDownLayer key={index}>
               <S.DropDownContent>
-                <S.Text>{`${index + 1}. ${cur}`}</S.Text>
+                <S.Text
+                  onClick={() => {
+                    setPopUp({
+                      title: cur,
+                      comments: KeywordMock.comments[index],
+                      status: true,
+                    });
+                  }}
+                >{`${index + 1}. ${cur}`}</S.Text>
               </S.DropDownContent>
             </S.DropDownLayer>
           ))

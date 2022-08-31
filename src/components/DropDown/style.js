@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   color: #6c757d;
-  border: solid;
+  border: solid 3px;
 `;
 
 export const DropDownLayer = styled.div`
@@ -13,6 +13,7 @@ export const Btn = styled.div`
   width: 20%;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const Upper = styled.div`

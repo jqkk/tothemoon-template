@@ -8,7 +8,9 @@ function Navbar() {
         <S.RightNav>
           <S.Logo to="/">Naetube</S.Logo>
         </S.RightNav>
-        <S.LeftNav />
+        <S.LeftNav>
+          <S.Logo to="/">mypage</S.Logo>
+        </S.LeftNav>
       </S.Navbar>
     </S.NavContainer>
   );

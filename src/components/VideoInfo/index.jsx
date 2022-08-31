@@ -3,7 +3,12 @@ import * as S from './style';
 import Timeline from '../Timeline';
 import { VideoInfoMock, TimelineMock } from '../../mock';
 
-function VideoInfo() {
+function VideoInfo({ player }) {
+  const clickfunc = (param) => {
+    return () => {
+      player.seekTo(param);
+    };
+  };
   return (
     <S.Container>
       <S.Title>{VideoInfoMock.title}</S.Title>
@@ -16,7 +21,13 @@ function VideoInfo() {
       <S.TimelineContainer>
         <Timeline title="true">인기 타임라인</Timeline>
         {TimelineMock.map((element, key) => (
-          <Timeline key={key}>{element.label}</Timeline>
+          <Timeline
+            key={key}
+            clickfunc={clickfunc(element.sec)}
+            count={element.count}
+          >
+            {element.label}
+          </Timeline>
         ))}
       </S.TimelineContainer>
     </S.Container>
