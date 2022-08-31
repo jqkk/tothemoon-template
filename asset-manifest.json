@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tothemoon-template/static/css/main.58151b0b.css",
-    "main.js": "/tothemoon-template/static/js/main.ac6c727c.js",
+    "main.js": "/tothemoon-template/static/js/main.5bddd566.js",
     "static/js/787.cae1ddfe.chunk.js": "/tothemoon-template/static/js/787.cae1ddfe.chunk.js",
     "index.html": "/tothemoon-template/index.html",
     "main.58151b0b.css.map": "/tothemoon-template/static/css/main.58151b0b.css.map",
-    "main.ac6c727c.js.map": "/tothemoon-template/static/js/main.ac6c727c.js.map",
+    "main.5bddd566.js.map": "/tothemoon-template/static/js/main.5bddd566.js.map",
     "787.cae1ddfe.chunk.js.map": "/tothemoon-template/static/js/787.cae1ddfe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58151b0b.css",
-    "static/js/main.ac6c727c.js"
+    "static/js/main.5bddd566.js"
   ]
 }
