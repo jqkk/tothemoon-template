@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
+      <BrowserRouter basename="/tothemoon-template">
         <ThemeProvider theme={theme}>
           <Routes>
             <Route path="/" element={<EntryPage />} />
