@@ -33,8 +33,12 @@ function SideBar({ elements }) {
             </S.Nav>
           );
         })}
-        <S.Href href={`${BASE_URL}${PATH.RECORD}`}>분석 결과 저장</S.Href>
-        <S.Href href={`${BASE_URL}${PATH.MYPAGE}`}>My Page</S.Href>
+        <S.Href href={`${BASE_URL}${PATH.RECORD}`} target="_blank">
+          분석 결과 저장
+        </S.Href>
+        <S.Href href={`${BASE_URL}${PATH.MYPAGE}`} target="_blank">
+          My Page
+        </S.Href>
       </S.NavContainer>
     </S.NavBar>
   );
