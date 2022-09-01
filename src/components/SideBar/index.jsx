@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BASE_URL, PATH } from '../../constants/api';
 import * as S from './style';
 
 function SideBar({ elements }) {
@@ -32,8 +33,8 @@ function SideBar({ elements }) {
             </S.Nav>
           );
         })}
-        <S.Nav>분석 결과 저장</S.Nav>
-        <S.Nav>My Page</S.Nav>
+        <S.Href href={`${BASE_URL}${PATH.RECORD}`}>분석 결과 저장</S.Href>
+        <S.Href href={`${BASE_URL}${PATH.MYPAGE}`}>My Page</S.Href>
       </S.NavContainer>
     </S.NavBar>
   );

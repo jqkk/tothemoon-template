@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { VideoContainer, DropDown, Search, Modal } from '../../../components';
 
 function Home({ url }) {
+  const { keywords, videoInfo, timelines } = useSelector(({ analysis }) => ({
+    keywords: analysis.keywords,
+    videoInfo: analysis.videoInfo,
+    timelines: analysis.timelines,
+  }));
+
   const [popUp, setPopUp] = useState({
     status: false,
     title: '',
@@ -16,10 +23,10 @@ function Home({ url }) {
           <Search setPopUp={setPopUp} />
         </SearchContainer>
         <DropDownContainer>
-          <DropDown setPopUp={setPopUp} />
+          <DropDown setPopUp={setPopUp} datasets={keywords} />
         </DropDownContainer>
       </HeaderContainer>
-      <VideoContainer videoId={url} />
+      <VideoContainer videoId={url} datasets={{ videoInfo, timelines }} />
       <Modal popUp={popUp} setPopUp={setPopUp} />
     </>
   );

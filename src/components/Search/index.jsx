@@ -1,12 +1,18 @@
 import React, { useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { requestGet } from '../../utils/httpClient';
+import { BASE_URL, PATH } from '../../constants/api';
 import * as S from './style';
-import { SearchMock } from '../../mock';
 
 function Search({ setPopUp }) {
+  const url = useSelector((state) => state.analysis.url);
   const input = useRef();
-  const onClick = () => {
+  const onClick = async () => {
+    // ?~~~&~~~
+    console.log(url);
     const keyword = input.current.value;
-    setPopUp({ title: keyword, comments: SearchMock, status: true });
+    const data = await requestGet(BASE_URL + PATH.SEARCH);
+    setPopUp({ title: keyword, comments: data, status: true });
   };
   return (
     <>

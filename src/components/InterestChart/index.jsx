@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import * as am5 from '@amcharts/amcharts5';
 import * as am5xy from '@amcharts/amcharts5/xy';
 import am5themesAnimated from '@amcharts/amcharts5/themes/Animated';
-import { InterestMock } from '../../mock';
 
-function InterestChart() {
+function InterestChart({ datasets }) {
   useEffect(() => {
     const root = am5.Root.new('chartdiv');
 
@@ -66,11 +65,11 @@ function InterestChart() {
     );
 
     (function setData() {
-      const data = InterestMock.map((cur) => {
-        const date = new Date(cur.date);
+      const data = datasets.map((cur) => {
+        const date = new Date(cur.commentDate);
         date.setHours(0, 0, 0, 0);
         am5.time.add(date, 'day', 0);
-        return { date: date.getTime(), value: cur.count };
+        return { date: date.getTime(), value: cur.commentCount };
       });
       series.data.setAll(data);
       series.appear(1000);

@@ -3,104 +3,19 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 
-function EmotionChart({ data }) {
-  const fearPercentage = `${Math.round(
-    (data.fear.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const surprisedPercentage = `${Math.round(
-    (data.surprised.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const angerPercentage = `${Math.round(
-    (data.anger.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const sadnessPercentage = `${Math.round(
-    (data.sadness.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const neutralPercentage = `${Math.round(
-    (data.neutral.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const happyPercentage = `${Math.round(
-    (data.anger.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
-  const disgustPercentage = `${Math.round(
-    (data.anger.length /
-      (data.fear.length +
-        data.surprised.length +
-        data.anger.length +
-        data.sadness.length +
-        data.neutral.length +
-        data.happy.length +
-        data.disgust.length)) *
-      100,
-  )}`;
-
+function EmotionChart({ percent }) {
   const settings = {
     labels: ['공포', '놀람', '분노', '슬픔', '중립', '행복', '혐오'],
     datasets: [
       {
         data: [
-          fearPercentage,
-          surprisedPercentage,
-          angerPercentage,
-          sadnessPercentage,
-          neutralPercentage,
-          happyPercentage,
-          disgustPercentage,
+          percent.fear,
+          percent.surprise,
+          percent.anger,
+          percent.sadness,
+          percent.neutral,
+          percent.happy,
+          percent.disgust,
         ],
         backgroundColor: [
           'rgb(153, 102, 255)',

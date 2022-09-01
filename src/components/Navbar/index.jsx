@@ -1,7 +1,9 @@
 import React from 'react';
 import * as S from './style';
+import { BASE_URL, PATH } from '../../constants/api';
 
 function Navbar() {
+  console.log(BASE_URL);
   return (
     <S.NavContainer>
       <S.Navbar>
@@ -9,7 +11,7 @@ function Navbar() {
           <S.Logo to="/">Naetube</S.Logo>
         </S.RightNav>
         <S.LeftNav>
-          <S.Logo to="/">mypage</S.Logo>
+          <S.Href href={`${BASE_URL}${PATH.MYPAGE}`}>mypage</S.Href>
         </S.LeftNav>
       </S.Navbar>
     </S.NavContainer>

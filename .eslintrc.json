@@ -7,7 +7,8 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "react-app"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -20,6 +21,9 @@
   "rules": {
     "react/prop-types": 0,
     "react/no-array-index-key": 0,
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "no-param-reassign": 0,
+    "no-console": 0,
+    "no-promise-executor-return": 0
   }
 }

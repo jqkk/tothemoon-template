@@ -27,3 +27,16 @@ export const Nav = styled.div`
   background-color: ${(props) =>
     props.clicked ? 'rgb(var(--color-shallow-indianred))' : 'inherit'};
 `;
+
+export const Href = styled.a`
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
+  background-color: ${(props) =>
+    props.clicked ? 'rgb(var(--color-shallow-indianred))' : 'inherit'};
+`;

@@ -36,3 +36,9 @@ export const Logo = styled(Link)`
   font-size: 1.25rem;
   font-weight: 400;
 `;
+
+export const Href = styled.a`
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+`;

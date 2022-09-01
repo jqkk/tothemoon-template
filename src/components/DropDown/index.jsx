@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
+
 import { AiOutlineCaretUp, AiOutlineCaretDown } from 'react-icons/ai';
 import TextLoop from 'react-text-loop';
 import * as S from './style';
 import styles from './DropDown.module.css';
-import { KeywordMock } from '../../mock';
 
-function DropDown({ setPopUp }) {
-  const data = KeywordMock.b5;
+function DropDown({ setPopUp, datasets }) {
   const [open, setOpen] = useState(false);
   const onClick = () => {
     setOpen((cur) => !cur);
@@ -15,9 +14,9 @@ function DropDown({ setPopUp }) {
     <S.Container>
       <S.DropDownLayer>
         <S.Upper>
-          {data.length !== 0 ? (
+          {datasets.b5.length !== 0 ? (
             <TextLoop className={styles.textLoop}>
-              {data.map((cur, index) => (
+              {datasets.b5.map((cur, index) => (
                 <span key={index} className={styles.loopContent}>
                   {`${index + 1}. ${cur}`}
                 </span>
@@ -36,14 +35,14 @@ function DropDown({ setPopUp }) {
         </S.Upper>
       </S.DropDownLayer>
       {open
-        ? data.map((cur, index) => (
+        ? datasets.b5.map((cur, index) => (
             <S.DropDownLayer key={index}>
               <S.DropDownContent>
                 <S.Text
                   onClick={() => {
                     setPopUp({
                       title: cur,
-                      comments: KeywordMock.comments[index],
+                      comments: datasets.comments[index],
                       status: true,
                     });
                   }}

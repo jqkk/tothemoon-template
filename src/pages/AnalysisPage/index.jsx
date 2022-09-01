@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect, useCallback } from 'react';
 import styled, { css } from 'styled-components';
 import { useParams } from 'react-router-dom';
-import { SideBar } from '../../components';
+import { useDispatch, useSelector } from 'react-redux';
+import { dataFetching } from '../../store/slices/analysisSlice';
+import { SideBar, Spinner } from '../../components';
 import useMoveScroll from '../../hooks/useMoveScroll';
 import { Home, Np, Emotion, Interest } from './Contents';
 
 function AnalysisPage() {
   const params = useParams();
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.analysis.loading);
+  const fetch = useCallback(
+    () => dispatch(dataFetching(params.url)),
+    [dispatch, params],
+  );
+  useEffect(() => {
+    fetch();
+  }, [fetch]);
   const { url } = params;
   const tabs = [
     {
@@ -37,7 +48,9 @@ function AnalysisPage() {
       center: true,
     },
   ];
-  return (
+  return loading ? (
+    <Spinner />
+  ) : (
     <>
       <SideBar elements={tabs} />
       <ContentContainer>

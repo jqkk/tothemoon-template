@@ -3,7 +3,7 @@ import * as S from './style';
 import Video from '../Video';
 import VideoInfo from '../VideoInfo';
 
-function VideoContainer({ videoId }) {
+function VideoContainer({ videoId, datasets }) {
   const [player, setPlayer] = useState();
   return (
     <S.Container>
@@ -11,7 +11,11 @@ function VideoContainer({ videoId }) {
         <Video videoId={videoId} setPlayer={setPlayer} />
       </S.VideoContainer>
       <S.InfoContainer>
-        <VideoInfo player={player} />
+        <VideoInfo
+          player={player}
+          videoInfo={datasets.videoInfo}
+          timelines={datasets.timelines}
+        />
       </S.InfoContainer>
     </S.Container>
   );

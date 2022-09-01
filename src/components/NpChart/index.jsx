@@ -3,27 +3,18 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 
-function NpChart({ data }) {
-  const positivePercentage = Math.round(
-    (data.positive.length / (data.positive.length + data.negative.length)) *
-      100,
-  );
-  const negativePercentage = Math.round(
-    (data.negative.length / (data.positive.length + data.negative.length)) *
-      100,
-  );
-
+function NpChart({ percent }) {
   const settings = {
     labels: [''],
     datasets: [
       {
         label: '긍정',
-        data: [positivePercentage],
+        data: [percent.positive],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
         label: '부정',
-        data: [negativePercentage],
+        data: [percent.negative],
         backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
     ],

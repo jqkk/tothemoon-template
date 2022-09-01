@@ -1,0 +1,30 @@
+{
+  "timelines": [{"count":"7","sec":0,"label":"00:00 ~ 00:10"},
+                {"count":"5","sec":60,"label":"01:00~01:10"},
+                {"count":"3","sec":150,"label":"02:30~02:40"},
+                {"count":"1","sec":191,"label":"03:11~03:21"},
+                {"count":"1","sec":230,"label":"03:50~04:00"}],
+
+  "videoinformations": {"title":"테스트 동영상입니다","date":"2022-08-31","view":"500000","like":"20000"},
+
+  "interest": [{"commentDate":"2022-03-23","commentCount":3},{"commentDate":"2022-03-28","commentCount":1}, 
+              {"commentDate":"2022-03-29","commentCount":1},{"commentDate":"2022-03-30","commentCount":1},{"commentDate":"2022-03-31","commentCount":2},{"commentDate":"2022-04-01","commentCount":1},{"commentDate":"2022-04-03","commentCount":1},{"commentDate":"2022-04-06","commentCount":1},{"commentDate":"2022-04-09","commentCount":1},{"commentDate":"2022-04-13","commentCount":1}],
+  
+  "keywords": {"b5":["키워드1","키워드2","키워드3","키워드4","키워드5"],"comments":[["키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다","키워드1에 대한 댓글입니다"],["키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다","키워드2에 대한 댓글입니다"],["키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다","키워드3에 대한 댓글입니다"],["키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다","키워드4에 대한 댓글입니다"],["키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다","키워드5에 대한 댓글입니다"]]},
+
+  "comments": {
+    "comments": [[{"writer":"OOOOOO","comment":"부정적인 댓글입니다"},{"writer":"OOOOOO","comment":"부정적인 댓글입니다"},{"writer":"OOOOOO","comment":"부정적인 댓글입니다"},{"writer":"OOOOOO","comment":"부정적인 댓글입니다"},{"writer":"OOOOOO","comment":"부정적인 댓글입니다"}],[{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"},{"writer":"OOOOOO","comment":"긍정적인 댓글입니다"}],[{"writer":"OOOOOO","comment":"공포 댓글입니다"},{"writer":"OOOOOO","comment":"공포 댓글입니다"},{"writer":"OOOOOO","comment":"공포 댓글입니다"}],[{"writer":"OOOOOO","comment":"놀람 댓글입니다"},{"writer":"OOOOOO","comment":"놀람 댓글입니다"},{"writer":"OOOOOO","comment":"놀람 댓글입니다"},{"writer":"OOOOOO","comment":"놀람 댓글입니다"},{"writer":"OOOOOO","comment":"놀람 댓글입니다"}],[{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"},{"writer":"OOOOOO","comment":"화남 댓글입니다"}],[{"writer":"OOOOOO","comment":"슬픔 댓글입니다"},{"writer":"OOOOOO","comment":"슬픔 댓글입니다"}],[{"writer":"OOOOOO","comment":"중립 댓글입니다"},{"writer":"OOOOOO","comment":"중립 댓글입니다"}],[{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"},{"writer":"OOOOOO","comment":"행복 댓글입니다"}],[{"writer":"OOOOOO","comment":"혐오 댓글입니다"},{"writer":"OOOOOO","comment":"혐오 댓글입니다"},{"writer":"OOOOOO","comment":"혐오 댓글입니다"},{"writer":"OOOOOO","comment":"혐오 댓글입니다"},{"writer":"OOOOOO","comment":"혐오 댓글입니다"}]],
+    "percent": {
+      "positive": 71,
+      "negative": 29,
+      "happy": 24,
+      "surprise": 15,
+      "anger": 26,
+      "sadness": 6,
+      "neutral": 6,
+      "disgust": 15,
+      "fear": 8
+    }
+  },
+  "search": ["검색댓글 1입니다","검색댓글 2입니다","검색댓글 3입니다","검색댓글 4입니다","검색댓글 5입니다","검색댓글 6입니다","검색댓글 7입니다","검색댓글 8입니다","검색댓글 9입니다","검색댓글 10입니다","검색댓글 11입니다","검색댓글 12입니다","검색댓글 13입니다","검색댓글 14입니다","검색댓글 15입니다","검색댓글 16입니다","검색댓글 17입니다","검색댓글 18입니다","검색댓글 19입니다","검색댓글 20입니다","검색댓글 21입니다","검색댓글 22입니다"]
+}
