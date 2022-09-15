@@ -1,12 +1,12 @@
-export const BASE_URL = 'http://localhost:8080';
+export const BASE_URL = 'http://192.168.0.101:8080';
 
 export const PATH = {
-  TIMELINE: '/timelines/',
-  VIDEOINFO: '/videoinformations/',
+  TIMELINE: '/timeline/',
+  VIDEOINFO: '/videoinfo/',
   INTEREST: '/interest/',
-  KEYWORDS: '/keywords/',
-  COMMENTS: '/comments/',
-  SEARCH: '/search',
+  KEYWORDS: '/getkeyword/',
+  COMMENTS: '/getcomments/',
+  SEARCH: '/findcomment',
   MYPAGE: '/my-page',
   RECORD: '/record',
 };

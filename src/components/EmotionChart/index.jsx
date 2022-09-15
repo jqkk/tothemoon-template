@@ -9,13 +9,14 @@ function EmotionChart({ percent }) {
     datasets: [
       {
         data: [
-          percent.fear,
-          percent.surprise,
-          percent.anger,
-          percent.sadness,
-          percent.neutral,
-          percent.happy,
-          percent.disgust,
+          percent.filter((element) => element.index === '17')[0].fearPercent,
+          percent.filter((element) => element.index === '12')[0]
+            .surprisedPercent,
+          percent.filter((element) => element.index === '13')[0].angerPercent,
+          percent.filter((element) => element.index === '14')[0].sadnessPercent,
+          percent.filter((element) => element.index === '15')[0].neutralPercent,
+          percent.filter((element) => element.index === '11')[0].happyPercent,
+          percent.filter((element) => element.index === '16')[0].disgustPercent,
         ],
         backgroundColor: [
           'rgb(153, 102, 255)',

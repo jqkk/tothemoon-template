@@ -9,9 +9,11 @@ function Search({ setPopUp }) {
   const input = useRef();
   const onClick = async () => {
     // ?~~~&~~~
-    console.log(url);
+    // console.log(url);
     const keyword = input.current.value;
-    const data = await requestGet(BASE_URL + PATH.SEARCH);
+    const data = await requestGet(
+      `${BASE_URL + PATH.SEARCH}?url=${url}&keyword=${keyword}`,
+    );
     setPopUp({ title: keyword, comments: data, status: true });
   };
   return (

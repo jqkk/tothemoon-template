@@ -9,12 +9,17 @@ function NpChart({ percent }) {
     datasets: [
       {
         label: '긍정',
-        data: [percent.positive],
+        data: [
+          percent.filter((element) => element.index === '9')[0].positivePercent,
+        ],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
         label: '부정',
-        data: [percent.negative],
+        data: [
+          percent.filter((element) => element.index === '10')[0]
+            .negativePercent,
+        ],
         backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
     ],

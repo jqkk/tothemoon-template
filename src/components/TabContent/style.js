@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-left: 120px;
-  width: 100%;
 `;
 
 export const Title = styled.h3`

@@ -37,8 +37,8 @@ function TabContent({ navs, comments }) {
           <tbody>
             {comments.map((element, index) => (
               <S.Tr key={index}>
-                <S.Td>{element.writer}</S.Td>
-                <S.Td>{element.comment}</S.Td>
+                <S.Td>{element.id}</S.Td>
+                <S.Td dangerouslySetInnerHTML={{ __html: element.comment }} />
               </S.Tr>
             ))}
           </tbody>

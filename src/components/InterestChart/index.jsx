@@ -69,7 +69,7 @@ function InterestChart({ datasets }) {
         const date = new Date(cur.commentDate);
         date.setHours(0, 0, 0, 0);
         am5.time.add(date, 'day', 0);
-        return { date: date.getTime(), value: cur.commentCount };
+        return { date: date.getTime(), value: Number(cur.commentCount) };
       });
       series.data.setAll(data);
       series.appear(1000);

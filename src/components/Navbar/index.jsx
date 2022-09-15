@@ -3,7 +3,6 @@ import * as S from './style';
 import { BASE_URL, PATH } from '../../constants/api';
 
 function Navbar() {
-  console.log(BASE_URL);
   return (
     <S.NavContainer>
       <S.Navbar>

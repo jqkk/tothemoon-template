@@ -11,39 +11,116 @@ const initialState = {
   videoInfo: { title: '', date: '', view: '', like: '' },
   interest: [],
   keywords: { b5: [], comments: [[]] },
-  comments: {
-    comments: [[], [], [], [], [], [], [], [], []],
-    percent: {
-      positive: 0,
-      negative: 0,
-      happy: 0,
-      surprise: 0,
-      anger: 0,
-      sadness: 0,
-      neutral: 0,
-      disgust: 0,
-      fear: 0,
+  comments: [
+    {
+      index: '0',
+      id: '',
+      comment: '',
     },
-  },
+    {
+      index: '1',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '2',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '3',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '4',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '5',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '6',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '7',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '8',
+      id: '',
+      comment: '',
+    },
+    {
+      index: '9',
+      positivePercent: 14.3,
+    },
+    {
+      index: '10',
+      negativePercent: 14.3,
+    },
+    {
+      index: '11',
+      happyPercent: 14.3,
+    },
+    {
+      index: '12',
+      surprisedPercent: 14.3,
+    },
+    {
+      index: '13',
+      angerPercent: 14.3,
+    },
+    {
+      index: '14',
+      sadnessPercent: 14.3,
+    },
+    {
+      index: '15',
+      neutralPercent: 14.3,
+    },
+    {
+      index: '16',
+      disgustPercent: 14.3,
+    },
+    {
+      index: '17',
+      fearPercent: 14.3,
+    },
+  ],
 };
 
-const wait = (timeToDelay) =>
-  new Promise((resolve) => setTimeout(resolve, timeToDelay));
+// const wait = (timeToDelay) =>
+//   new Promise((resolve) => setTimeout(resolve, timeToDelay));
 
 export const dataFetching = createAsyncThunk(
   dataFetchingAction,
   async (url) => {
     try {
-      await wait(5000);
+      // await wait(5000);
       const [timelines, videoInfo, interest, keywords, comments] =
         await Promise.all([
-          requestGet(BASE_URL + PATH.TIMELINE),
-          requestGet(BASE_URL + PATH.VIDEOINFO),
-          requestGet(BASE_URL + PATH.INTEREST),
-          requestGet(BASE_URL + PATH.KEYWORDS),
-          requestGet(BASE_URL + PATH.COMMENTS),
+          requestGet(BASE_URL + PATH.TIMELINE + url),
+          requestGet(BASE_URL + PATH.VIDEOINFO + url),
+          requestGet(BASE_URL + PATH.INTEREST + url),
+          requestGet(BASE_URL + PATH.KEYWORDS + url),
+          requestGet(BASE_URL + PATH.COMMENTS + url),
         ]);
-      return { timelines, videoInfo, interest, keywords, comments, url };
+      console.log(videoInfo);
+      return {
+        timelines,
+        videoInfo: videoInfo[0],
+        interest,
+        keywords,
+        comments,
+        url,
+      };
     } catch (e) {
       console.error(e);
       throw e;

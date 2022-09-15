@@ -6,8 +6,8 @@ function SearchContainer() {
   const navigate = useNavigate();
   const input = useRef();
   const onClick = () => {
-    // const videoId = new URL(input.current.value).pathname;
-    const url = `/analysis/js1CtxSY38I`;
+    const videoId = new URL(input.current.value).pathname;
+    const url = `/analysis${videoId}`;
     navigate(url);
   };
   return (
